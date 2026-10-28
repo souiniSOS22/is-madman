@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MADMAN | Streetwear</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 7%;
+      border-bottom: 1px solid #333;
+    }
+    .logo { font-size: 27px; font-weight: 900; }
+    .logo span { color: #e4ff00; }
+    a { color: white; text-decoration: none; }
+    .hero {
+      padding: 100px 7%;
+      min-height: 440px;
+      background: linear-gradient(110deg, #111, #303030);
+    }
+    .hero p { color: #e4ff00; letter-spacing: 4px; }
+    h1 { font-size: clamp(48px, 9vw, 100px); line-height: .95; }
+    .button {
+      display: inline-block;
+      padding: 15px 22px;
+      background: #e4ff00;
+      color: #111;
+      font-weight: bold;
+    }
+    section.products { padding: 65px 7%; text-align: center; }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .item { background: #222; padding-bottom: 20px; }
+    .item img { width: 100%; display: block; }
+    .price { color: #e4ff00; }
+    footer { padding: 25px; text-align: center; color: #aaa; }
+    @media (max-width: 600px) {
+      .items { grid-template-columns: 1fr; }
+      header { gap: 12px; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MADMAN<span>.</span></div>
+    <a href="#shop">SHOP</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>NOT MADE TO FIT IN.</p>
+      <h1>BE YOUR<br>OWN MADMAN.</h1>
+      <a class="button" href="#shop">EXPLORE COLLECTION</a>
+    </section>
+
+    <section class="products" id="shop">
+      <p>THE FIRST DROP</p>
+      <h2>NEW ARRIVALS</h2>
+      <div class="items">
+        <article class="item">
+          <img src="https://placehold.co/500x600/222222/e4ff00?text=BLACK+HOODIE" alt="Black hoodie">
+          <h3>BLACK HOODIE</h3>
+          <p class="price">299 MAD</p>
+        </article>
+        <article class="item">
+          <img src="https://placehold.co/500x600/333333/ffffff?text=OVERSIZED+TEE" alt="Oversized T-shirt">
+          <h3>OVERSIZED TEE</h3>
+          <p class="price">149 MAD</p>
+        </article>
+        <article class="item">
+          <img src="https://placehold.co/500x600/444444/ffffff?text=GREY+SWEATSHIRT" alt="Grey sweatshirt">
+          <h3>GREY SWEATSHIRT</h3>
+          <p class="price">249 MAD</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>MADMAN © 2026 — MADE TO STAND OUT.</footer>
+</body>
+</html>
